@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính</title>
+</head>
+<body>
+<input type="text" id="sothu1"/>
+<input type="text" id="sothu2"/>
+<br>
+<button id="cong" onclick="cong();">Addtion(+)</button>
+<button id="tru" onclick="tru();">Subtraction(-)</button>
+<button id="nhan" onclick="nhan();">Multiplicaltion(x)</button>
+<button id="chia" onclick="chia();">Division(/)</button>
+
+<script>
+    function cong() {
+        let sothu1 = Number(document.getElementById("sothu1").value);
+        let sothu2 = Number(document.getElementById("sothu2").value);
+        result = sothu1 + sothu2;
+        alert(result);
+    }
+    function tru() {
+        let sothu1 = Number(document.getElementById("sothu1").value);
+        let sothu2 = Number(document.getElementById("sothu2").value);
+        result = sothu1 - sothu2;
+        alert(result);
+    }
+    function nhan() {
+        let sothu1 = Number(document.getElementById("sothu1").value);
+        let sothu2 = Number(document.getElementById("sothu2").value);
+        result = sothu1 * sothu2;
+        alert(result);
+    }
+    function chia() {
+        let sothu1 = Number(document.getElementById("sothu1").value);
+        let sothu2 = Number(document.getElementById("sothu2").value);
+        result = sothu1 / sothu2;
+        alert(result);
+    }
+</script>
+</body>
+</html>

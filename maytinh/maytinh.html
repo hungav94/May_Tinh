@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính</title>
+    <link rel="stylesheet" href="mycss.css"/>
+</head>
+<body>
+<div id="wrapper">
+<form name="caculator">
+    <div id="span">
+        <input type="text" id="show" readonly placeholder="0">
+    </div>
+    <table>
+        <tbody>
+        <tr>
+            <td>
+                <input type="button" id="mongoac" value="(" onclick="showMe(this.value);"/>
+            </td>
+            <td>
+                <input type="button" id="dongngoac" value=")" onclick="showMe(this.value);" />
+            </td>
+            <td>
+                <input type="button" id="chialaydu" value="%" onclick="showMe(this.value);" />
+            </td>
+            <td>
+                <input type="reset" id="resert" value="AC" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" id="so7" value="7" onclick="showMe(this.value);" />
+            </td>
+            <td>
+                <input type="button" id="so8" value="8" onclick="showMe(this.value);" />
+            </td>
+            <td>
+                <input type="button" id="so9" value="9" onclick="showMe(this.value);"/>
+            </td>
+            <td>
+                <input type="button" id="chia" value="/" onclick="showMe(this.value);" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" id="so4" value="4" onclick="showMe(this.value);" />
+            </td>
+            <td>
+                <input type="button" id="so5" value="5" onclick="showMe(this.value);" />
+            </td>
+            <td>
+                <input type="button" id="so6" value="6" onclick="showMe(this.value);" />
+            </td>
+            <td>
+                <input type="button" id="nhan" value="*" onclick="showMe(this.value);" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" id="so1" value="1" onclick="showMe(this.value);" />
+            </td>
+            <td>
+                <input type="button" id="so2" value="2" onclick="showMe(this.value);" />
+            </td>
+            <td>
+                <input type="button" id="so3" value="3" onclick="showMe(this.value);" />
+            </td>
+            <td>
+                <input type="button" id="tru" value="-" onclick="showMe(this.value);" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" id="so0" value="0" onclick="showMe(this.value);" />
+            </td>
+            <td>
+                <input type="button" id="cham" value="." onclick="showMe(this.value);" />
+            </td>
+            <td>
+                <input type="button" id="bang" value="=" onclick="show.value=eval(show.value);" />
+            </td>
+            <td>
+                <input type="button" id="cong" value="+" onclick="showMe(this.value);" />
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</form>
+</div>
+<script>
+    function showMe(n) {
+        caculator.show.value = caculator.show.value + n;
+    }
+</script>
+</body>
+</html>
