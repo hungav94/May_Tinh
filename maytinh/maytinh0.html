@@ -8,35 +8,62 @@
 <input type="text" id="sothu1"/>
 <input type="text" id="sothu2"/>
 <br>
-<button id="cong" onclick="cong();">Addtion(+)</button>
-<button id="tru" onclick="tru();">Subtraction(-)</button>
-<button id="nhan" onclick="nhan();">Multiplicaltion(x)</button>
-<button id="chia" onclick="chia();">Division(/)</button>
+<!--<button id="cong" value="cong" onclick="cong();">Addtion(+)</button>-->
+<!--<button id="tru" value="tru" onclick="tru();">Subtraction(-)</button>-->
+<!--<button id="nhan" value="nhan" onclick="nhan();">Multiplicaltion(x)</button>-->
+<!--<button id="chia" value="chia" onclick="chia();">Division(/)</button>-->
+<button id="cong" value="cong" onclick="tinhtoan();">Addtion(+)</button>
+<button id="tru" value="tru" onclick="tinhtoan();">Subtraction(-)</button>
+<button id="nhan" value="nhan" onclick="tinhtoan();">Multiplicaltion(x)</button>
+<button id="chia" value="chia" onclick="tinhtoan();">Division(/)</button>
+
 
 <script>
-    function cong() {
+    // function cong() {
+    //     let sothu1 = Number(document.getElementById("sothu1").value);
+    //     let sothu2 = Number(document.getElementById("sothu2").value);
+    //     result = sothu1 + sothu2;
+    //     alert(result);
+    // }
+    // function tru() {
+    //     let sothu1 = Number(document.getElementById("sothu1").value);
+    //     let sothu2 = Number(document.getElementById("sothu2").value);
+    //     result = sothu1 - sothu2;
+    //     alert(result);
+    // }
+    // function nhan() {
+    //     let sothu1 = Number(document.getElementById("sothu1").value);
+    //     let sothu2 = Number(document.getElementById("sothu2").value);
+    //     result = sothu1 * sothu2;
+    //     alert(result);
+    // }
+    // function chia() {
+    //     let sothu1 = Number(document.getElementById("sothu1").value);
+    //     let sothu2 = Number(document.getElementById("sothu2").value);
+    //     result = sothu1 / sothu2;
+    //     alert(result);
+    // }
+    function tinhtoan() {
         let sothu1 = Number(document.getElementById("sothu1").value);
         let sothu2 = Number(document.getElementById("sothu2").value);
-        result = sothu1 + sothu2;
-        alert(result);
-    }
-    function tru() {
-        let sothu1 = Number(document.getElementById("sothu1").value);
-        let sothu2 = Number(document.getElementById("sothu2").value);
-        result = sothu1 - sothu2;
-        alert(result);
-    }
-    function nhan() {
-        let sothu1 = Number(document.getElementById("sothu1").value);
-        let sothu2 = Number(document.getElementById("sothu2").value);
-        result = sothu1 * sothu2;
-        alert(result);
-    }
-    function chia() {
-        let sothu1 = Number(document.getElementById("sothu1").value);
-        let sothu2 = Number(document.getElementById("sothu2").value);
-        result = sothu1 / sothu2;
-        alert(result);
+        let cong = document.getElementById("cong").value;
+        let tru = document.getElementById("tru").value;
+        let nhan = document.getElementById("nhan").value;
+        let chia = document.getElementById("chia").value;
+        let result1;
+        if (cong == "cong") {
+            result1 = sothu1 + sothu2;
+        } else
+        if (tru == "tru") {
+            result1 = sothu1 - sothu2;
+        } else
+        if (nhan == "nhan") {
+            result1 = sothu1 * sothu2;
+        } else
+        if (chia == "chia") {
+            result1 = sothu1 / sothu2;
+        }
+        alert(result1);
     }
 </script>
 </body>
